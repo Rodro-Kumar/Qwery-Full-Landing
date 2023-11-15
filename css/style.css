@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+    background-color: transparent;
+    font-family: 'Open Sans';
+}
+
+/*========================= Menupart ================================= */
+
+.menupart{
+    background: url(/image/Header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 950px;
+}
+
+.menupart .main-menu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menupart .menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+}
+
+.menupart .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.menupart .menu ul li a:hover{
+    color: #000;
+    font-weight: 600;
+}
+
+.menupart .menu ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFC178;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.menupart .menu ul li:hover::after{
+    width: 100%;
+
+}
+
+/*========================= Menupart End ================================= */
+
+/*========================== Header ==================== */
+
+.header{
+    margin-top: 25%;
+}
+
+.header p{
+    color: #FFC178;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.header h1{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 110px;
+    margin-top: 10px;
+}
+
+.header h1 span{
+    font-weight: 700;
+}
+
+/*========================== Header End ==================== */
+
+
+/* =================== About ================== */
+
+.about{
+    background: #000;
+    width: 100%;
+    height: 900px;
+}
+
+.about .about-content .about-img img{
+    width: 500px;
+    height: 550px;
+}
+
+.about .about-content .about-text #p1{
+    color: #FFC178;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.about .about-content .about-text h1{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about .about-content .about-text #p2{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about .about-content .about-text #p3{
+    color: #FFC178;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: .5s ease;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.about .about-content{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.about-text{
+    margin-left: 15px;
+}
+
+.about-content .about-text #p3:hover{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* =================== About End ================== */
+
+/* ================= Details ======================= */
+
+.detail{
+    background: #000;
+    width: 100%;
+    height: 900px;
+}
+
+.detail .detail-img{
+    width: 1000px;
+    height: 800px;
+    background: url(/image/details.jpg);    
+}
+
+.text-area{
+    color: #fff;
+    text-align: center;
+    padding-top: 505px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.text-area #p4{
+    color: #FFC178;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 6px;
+    
+}
+
+.text-area h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 06px;
+}
+
+.text-area #p5{
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text-area #p6{
+    color: #FFC178;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.text-area #p6:hover{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+/* ================= Details End ======================= */
+
+/* ====================== More ======================= */
+
+.more{
+    background: #000;
+    width: 100%;
+    height: 900px;
+}
+
+.more .more-img img{
+    height: 550px;
+    width: 550px;
+}
+
+.more .more-text #p1{
+    color: #FFC178;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+
+}
+
+.more .more-text h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+
+}
+
+.more .more-text #p2{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    
+}
+
+.more .more-text #p3{
+    color: #FFC178;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    transition: .5s ease;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.more .more-content{
+    display: flex;
+    align-items: center;
+}
+
+.more .more-content{
+    margin-top: 20%;
+}
+
+.more-text{
+    margin-right: 15px;
+}
+
+.more .more-text #p3:hover{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+/* ====================== More End ======================= */
+
+
+/* ================== Sub footer ==================== */
+
+.sub-footer{
+    background: #000;
+    width: 100%;
+    height: 100px;
+}
+
+.sub-footer .sub-footer-content p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.sub-footer .sub-footer-content button{
+    padding: 10px 30px 10px 30px ;
+    background: #FFA343;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    border:0;
+    transition: .5s;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.sub-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+}
+
+.btn p{
+    margin-right: 10px;
+}
+
+.sub-footer .sub-footer-content button:hover{
+    
+    background-color: #b38656;
+}
+
+
+
+
+
+
+
+
+    
+/* ================== Sub footer End ==================== */
+
+/* ====================== Footer ================== */
+
+
+.footer{
+    background: #000;
+    width: 100%;
+    height: 400px;
+    
+
+    
+}
+
+.text-sec2  ul li{
+    list-style: none;
+    padding-bottom: 10px;
+
+}
+
+.text-sec2  ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: .5s ease;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.text-sec2  #li{
+    color: #FFA343;
+    font-weight: 700;
+
+}
+
+.footer .text-sec2{
+    display: flex;
+}
+
+.text-sec1{
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-sec2  ul{
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.text-sec1 h1{
+    margin-bottom: 25px;
+}
+
+.text-sec1 p{
+    margin-bottom: 30px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    cursor: pointer;
+}
+
+.text-sec1 i{
+    padding-right: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+    font-size: 25px;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.text-sec2  ul li a:hover{
+    color: #FFA343;
+    text-decoration: underline;
+    
+
+}
+
+.text-sec1 i:hover{
+    color: #FFA343;
+
+}
+
+.text-sec1 p:hover{
+    color: #FFA343;
+    text-decoration: underline;
+}
+
+/* ====================== Footer End ================== */
+
+
+/* ============================================================ */
+
+.footer-bottom-part  p{
+    color: #6b6a6a;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 150px;
+}
